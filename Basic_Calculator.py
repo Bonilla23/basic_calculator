@@ -16,6 +16,10 @@ def resta(num1,num2):
     total = num1 - num2
     return total
 
+def mult(num1,num2):
+    total = num1 * num2
+    return total
+
 # Create the bucle
 while salir == "Y":
     #---Menu----#
@@ -30,3 +34,5 @@ while salir == "Y":
         print(suma(num1,num2))
     elif option.lower() == "restar":
         print(resta(num1,num2))
+    elif option.lower() == "multiplicar":
+        print(mult(num1,num2))
