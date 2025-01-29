@@ -6,15 +6,6 @@ num1 = 0
 num2 = 0
 salir = "N"
 
-# Ask the numbers
-while True:
-    try:
-        num1 = float(input("First number: "))
-        num2 = float(input("Second number: "))
-        break
-    except ValueError:
-        print("Introduce numeros validos")
-
 # Create the Def 
 def suma(num1,num2):
     total = num1 + num2
@@ -37,6 +28,13 @@ def div(num1,num2):
 
 # Create the bucle
 while salir == "N":
+    while True:
+        try:
+            num1 = float(input("First number: "))
+            num2 = float(input("Second number: "))
+            break
+        except ValueError:
+            print("Introduce numeros validos")
     #---Menu----#
     print("----Menu----")
     print("Sumar (" ,num1, "+ " ,num2, ")")
@@ -48,17 +46,21 @@ while salir == "N":
     option = str(input("Introduce una opcion: "))
     if option.lower() == "sumar":
         suma(num1,num2)
-        time.sleep(1)
+
     elif option.lower() == "restar":
         resta(num1,num2)
-        time.sleep(1)
+
     elif option.lower() == "multiplicar":
         mult(num1,num2)
-        time.sleep(1)
+
     elif option.lower() == "dividir":
         div(num1,num2)
-        time.sleep(1)
+
     elif option.lower() == "salir":
         salir = "Y"
+    
+    else:
+        print("Opcion Incorrecta...")    
+    time.sleep(2)
         
         
