@@ -44,13 +44,13 @@ while salir == "N":
     # Variable option
     option = str(input("Introduce una opcion: "))
     if option.lower() == "sumar":
-        print(suma(num1,num2))
+        suma(num1,num2)
     elif option.lower() == "restar":
-        print(resta(num1,num2))
+        resta(num1,num2)
     elif option.lower() == "multiplicar":
-        print(mult(num1,num2))
+        mult(num1,num2)
     elif option.lower() == "dividir":
-        print(div(num1,num2))
+        div(num1,num2)
     elif option.lower() == "salir":
         salir = "Y"
         
