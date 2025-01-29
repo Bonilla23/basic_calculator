@@ -1,7 +1,7 @@
 # Create the variables
 num1 = 0
 num2 = 0
-salir = "Y"
+salir = "N"
 
 # Ask the numbers
 num1 = int(input("First number: "))
@@ -25,13 +25,14 @@ def div(num1,num2):
     print(f"La division entre {num1} / {num2} = {total}")
 
 # Create the bucle
-while salir == "Y":
+while salir == "N":
     #---Menu----#
     print("----Menu----")
     print("Sumar (" ,num1, "+ " ,num2, ")")
     print("Restar (" ,num1, "- " ,num2, ")")
     print("Multiplicar (" ,num1, "* " ,num2, ")")
     print("Dividir (" ,num1, "/ " ,num2, ")")
+    print("Salir")
     # Variable option
     option = str(input("Introduce una opcion: "))
     if option.lower() == "sumar":
@@ -42,3 +43,6 @@ while salir == "Y":
         print(mult(num1,num2))
     elif option.lower() == "dividir":
         print(div(num1,num2))
+    elif option.lower() == "salir":
+        salir = "Y"
+        
