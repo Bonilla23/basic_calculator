@@ -12,6 +12,10 @@ def suma(num1,num2):
     total = num1 + num2
     return total
 
+def resta(num1,num2):
+    total = num1 - num2
+    return total
+
 # Create the bucle
 while salir == "Y":
     #---Menu----#
@@ -24,4 +28,5 @@ while salir == "Y":
     option = str(input("Introduce una opcion: "))
     if option.lower() == "sumar":
         print(suma(num1,num2))
-        
+    elif option.lower() == "restar":
+        print(resta(num1,num2))
