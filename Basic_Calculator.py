@@ -20,6 +20,10 @@ def mult(num1,num2):
     total = num1 * num2
     return total
 
+def div(num1,num2):
+    total = num1 / num2
+    return total
+
 # Create the bucle
 while salir == "Y":
     #---Menu----#
@@ -36,3 +40,5 @@ while salir == "Y":
         print(resta(num1,num2))
     elif option.lower() == "multiplicar":
         print(mult(num1,num2))
+    elif option.lower() == "dividir":
+        print(div(num1,num2))
