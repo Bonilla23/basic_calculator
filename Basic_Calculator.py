@@ -21,8 +21,11 @@ def mult(num1,num2):
     print(f"La multiplicacion entre {num1} * {num2} = {total}")
 
 def div(num1,num2):
-    total = num1 / num2
-    print(f"La division entre {num1} / {num2} = {total}")
+    if num2 == 0:
+        print("No se puede dividir entre 0")
+    else:
+        total = num1 / num2
+        print(f"La division entre {num1} / {num2} = {total}")
 
 # Create the bucle
 while salir == "N":
@@ -45,4 +48,5 @@ while salir == "N":
         print(div(num1,num2))
     elif option.lower() == "salir":
         salir = "Y"
+        
         
