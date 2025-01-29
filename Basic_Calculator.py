@@ -1,3 +1,6 @@
+#Import time
+import time
+
 # Create the variables
 num1 = 0
 num2 = 0
@@ -45,12 +48,16 @@ while salir == "N":
     option = str(input("Introduce una opcion: "))
     if option.lower() == "sumar":
         suma(num1,num2)
+        time.sleep(1)
     elif option.lower() == "restar":
         resta(num1,num2)
+        time.sleep(1)
     elif option.lower() == "multiplicar":
         mult(num1,num2)
+        time.sleep(1)
     elif option.lower() == "dividir":
         div(num1,num2)
+        time.sleep(1)
     elif option.lower() == "salir":
         salir = "Y"
         
