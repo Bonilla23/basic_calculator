@@ -4,8 +4,13 @@ num2 = 0
 salir = "N"
 
 # Ask the numbers
-num1 = int(input("First number: "))
-num2 = int(input("Second number: "))
+while True:
+    try:
+        num1 = float(input("First number: "))
+        num2 = float(input("Second number: "))
+        break
+    except ValueError:
+        print("Introduce numeros validos")
 
 # Create the Def 
 def suma(num1,num2):
