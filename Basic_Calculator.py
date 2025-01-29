@@ -45,18 +45,18 @@ while salir == "N":
         print("5: Cambiar numeros")
         print("6: Salir")
         # Variable option
-        option = str(input("Introduce una opcion: "))
-        if option.lower() == "sumar" or option == "1":
+        option = str(input("Introduce una opcion: ")).lower()
+        if option == "sumar" or option == "1":
             suma(num1,num2)
-        elif option.lower() == "restar" or option == "2":
+        elif option == "restar" or option == "2":
             resta(num1,num2)
-        elif option.lower() == "multiplicar" or option == "3":
+        elif option == "multiplicar" or option == "3":
             mult(num1,num2)
-        elif option.lower() == "dividir" or option == "4":
+        elif option == "dividir" or option == "4":
             div(num1,num2)
-        elif option.lower() == "dividir" or option == "5":
+        elif option == "Cambiar numeros" or option == "5":
             break
-        elif option.lower() == "salir" or option == "6":
+        elif option == "salir" or option == "6":
             salir = "Y"
         else:
             print("Opcion Incorrecta...")    
