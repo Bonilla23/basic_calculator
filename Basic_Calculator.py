@@ -35,32 +35,31 @@ while salir == "N":
             break
         except ValueError:
             print("Introduce numeros validos")
-    #---Menu----#
-    print("----Menu----")
-    print("Sumar (" ,num1, "+ " ,num2, ")")
-    print("Restar (" ,num1, "- " ,num2, ")")
-    print("Multiplicar (" ,num1, "* " ,num2, ")")
-    print("Dividir (" ,num1, "/ " ,num2, ")")
-    print("Salir")
-    # Variable option
-    option = str(input("Introduce una opcion: "))
-    if option.lower() == "sumar":
-        suma(num1,num2)
-
-    elif option.lower() == "restar":
-        resta(num1,num2)
-
-    elif option.lower() == "multiplicar":
-        mult(num1,num2)
-
-    elif option.lower() == "dividir":
-        div(num1,num2)
-
-    elif option.lower() == "salir":
-        salir = "Y"
+    #---Men----#
+    while True:
+        print("----Menu----")
+        print("1: Sumar (" ,num1, "+ " ,num2, ")")
+        print("2: Restar (" ,num1, "- " ,num2, ")")
+        print("3: Multiplicar (" ,num1, "* " ,num2, ")")
+        print("4: Dividir (" ,num1, "/ " ,num2, ")")
+        print("5: Cambiar numeros")
+        print("6: Salir")
+        # Variable option
+        option = str(input("Introduce una opcion: "))
+        if option.lower() == "sumar" or option == "1":
+            suma(num1,num2)
+        elif option.lower() == "restar" or option == "2":
+            resta(num1,num2)
+        elif option.lower() == "multiplicar" or option == "3":
+            mult(num1,num2)
+        elif option.lower() == "dividir" or option == "4":
+            div(num1,num2)
+        elif option.lower() == "dividir" or option == "5":
+            break
+        elif option.lower() == "salir" or option == "6":
+            salir = "Y"
+        else:
+            print("Opcion Incorrecta...")    
+        time.sleep(2)
     
-    else:
-        print("Opcion Incorrecta...")    
-    time.sleep(2)
-        
-        
+    
