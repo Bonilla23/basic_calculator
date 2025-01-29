@@ -10,19 +10,19 @@ num2 = int(input("Second number: "))
 # Create the Def 
 def suma(num1,num2):
     total = num1 + num2
-    return total
+    print(f"La suma entre {num1} + {num2} = {total}")
 
 def resta(num1,num2):
     total = num1 - num2
-    return total
+    print(f"La resta entre {num1} - {num2} = {total}")
 
 def mult(num1,num2):
     total = num1 * num2
-    return total
+    print(f"La multiplicacion entre {num1} * {num2} = {total}")
 
 def div(num1,num2):
     total = num1 / num2
-    return total
+    print(f"La division entre {num1} / {num2} = {total}")
 
 # Create the bucle
 while salir == "Y":
